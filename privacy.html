@@ -19,9 +19,9 @@
     <p class="eyebrow">Privacy policy</p>
     <h1>How the Discord Bot Client handles information</h1>
     <p><strong>Effective date:</strong> October 8, 2026</p>
-    <p>This policy describes the Discord Bot Client web application (“Client”), operated by <strong>[BOT OWNER / ORGANIZATION LEGAL NAME]</strong> (“operator,” “we,” “us”). The Client is a self-hosted interface that uses a Discord bot account and Discord’s services. It is not operated by or affiliated with Discord Inc.</p>
+    <p>This policy describes the Discord Bot Client web application (“Client”), maintained by <strong>crsgamer357</strong> (“operator,” “I,” “me”). The Client is a self-hosted interface that uses a Discord bot account and Discord’s services. It is not operated by or affiliated with Discord Inc.</p>
     <div class="notice">
-      <strong>Deployment matters:</strong> The person or organization that runs the bot server controls its configuration, access, logs, and local files. If you operate your own instance, you are responsible for informing its users and securing it. Complete the owner, contact, and jurisdiction fields before publishing.
+      <strong>Deployment matters:</strong> The operator of the running bot server controls its configuration, access, logs, and local files. This policy describes the project’s default self-hosted design; the operator must keep it accurate if a deployment adds analytics, changes storage, or uses additional services.
     </div>
 
     <h2>1. Information the Client handles</h2>
@@ -35,7 +35,7 @@
     <p>The exact information depends on Discord permissions, enabled gateway intents, available Discord features, and what the operator has configured. The Client does not sign users in with Discord OAuth or ask for their Discord password.</p>
 
     <h2>2. How information is used</h2>
-    <p>The operator uses this information to operate the bot-backed interface: show Discord conversations and server structure, provide messaging and interaction features, maintain unread indicators, render previews, and respond to actions a signed-in Client user requests. The app forwards live Discord data to connected, authenticated browser sessions.</p>
+    <p>I use this information to operate the bot-backed interface: show Discord conversations and server structure, provide messaging and interaction features, maintain unread indicators, render previews, and respond to actions an authenticated Client user requests. The app forwards live Discord data to connected, authenticated browser sessions.</p>
     <p>Message content is handled in memory to deliver and render conversations. The application’s JSON files do not serve as a message archive; messages remain subject to Discord’s own storage and retention. Runtime errors may appear in the process or hosting logs if the operator or host records them.</p>
 
     <h2>3. Local files and retention</h2>
@@ -47,30 +47,29 @@
       <li><code>dm_cache.json</code>: IDs used to restore the list of previously opened direct-message conversations.</li>
       <li><code>guild_sidebar.json</code>: server ordering, folder membership, and folder display preferences.</li>
     </ul>
-    <p>These files remain until the operator deletes them or the host removes the application data. They are not automatically sent to GitHub Pages. Do not put private runtime data, Discord credentials, or user data into a public repository. The bot token and web-client password belong in the server’s private environment configuration, never in this static site.</p>
+    <p>These files remain until I delete them or the host removes the application data. They are not automatically sent to GitHub Pages. Do not put private runtime data, Discord credentials, or user data into a public repository. The bot token and web-client password belong in the server’s private environment configuration, never in this static site.</p>
 
     <h2>4. Access control and security</h2>
-    <p>The web client is protected by the configured web-client password and a session cookie. The operator controls who receives that password and who can reach the host. Anyone who can use the authenticated client may see data that the bot can access and may have the ability to perform actions granted by the bot’s Discord permissions.</p>
+    <p>The web client is protected by the configured web-client password and a session cookie. I control who receives that password and who can reach the host. Anyone who can use the authenticated client may see data that the bot can access and may have the ability to perform actions granted by the bot’s Discord permissions.</p>
     <p>Use a unique, strong password; keep the bot token private; restrict network access; keep dependencies updated; and use HTTPS when exposing the client beyond a trusted local network. No internet-connected system can be guaranteed completely secure.</p>
 
     <h2>5. Discord and other services</h2>
-    <p>The Client communicates with Discord’s API and may request resources from Discord’s CDN. Depending on content and features used, the server or browser may also request preview or media resources from external websites and providers linked in messages. Those services receive ordinary connection information and the URL or resource requested, and their own privacy policies apply. The operator does not control their practices.</p>
+    <p>The Client communicates with Discord’s API and may request resources from Discord’s CDN. Depending on content and features used, the server or browser may also request preview or media resources from external websites and providers linked in messages. Those services receive ordinary connection information and the URL or resource requested, and their own privacy policies apply. I do not control their practices.</p>
     <p>The web client currently loads Tailwind CSS and Font Awesome from their public CDNs. A browser opening the client may therefore connect to those CDN operators, which can receive ordinary request and connection information. GitHub Pages hosts this policy website when enabled. GitHub may process technical information such as IP address and request metadata to deliver and protect the pages. See each provider’s current privacy statement for its practices. This policy website itself does not add analytics or advertising trackers.</p>
 
     <h2>6. Sharing</h2>
-    <p>The operator does not sell personal information. Information is shared with Discord as needed for bot operation, with the authenticated browser sessions connected to the instance, and with hosting or infrastructure providers used by the operator. The operator may disclose information when required by law or reasonably necessary to protect users, the service, or others.</p>
+    <p>I do not sell personal information. Information is shared with Discord as needed for bot operation, with the authenticated browser sessions connected to the instance, and with hosting or infrastructure providers used to run the service. I may disclose information when required by law or reasonably necessary to protect users, the service, or others.</p>
 
     <h2>7. Your choices and requests</h2>
-    <p>For questions or requests about information held by a particular bot instance, contact that instance’s operator at <a href="mailto:[CONTACT EMAIL]">[CONTACT EMAIL]</a>. The operator can remove the local JSON files listed above. Requests concerning information held by Discord or an external media provider must be directed to that provider. Rights and response requirements depend on your location and the operator’s role under applicable law.</p>
+    <p>For questions or requests about information held by this bot instance, contact me through <a href="https://discord.com/users/968494952369782844" target="_blank" rel="noopener noreferrer">my Discord profile</a>. I can remove the local JSON files listed above. Requests concerning information held by Discord or an external media provider must be directed to that provider. Rights and response requirements depend on your location and applicable law.</p>
 
     <h2>8. Children</h2>
-    <p>The Client is not intended for anyone who may not lawfully use Discord under Discord’s minimum-age rules or applicable local law. The operator does not knowingly use the Client to collect information directly from children in violation of applicable law. Contact the operator if you believe a child’s information has been handled improperly.</p>
+    <p>The Client is not intended for anyone who may not lawfully use Discord under Discord’s minimum-age rules or applicable local law. I do not knowingly use the Client to collect information directly from children in violation of applicable law. Contact me if you believe a child’s information has been handled improperly.</p>
 
     <h2>9. Changes and contact</h2>
-    <p>The operator may update this policy when the Client or its data handling changes. The revised policy will be posted on this page with a new effective date.</p>
-    <p><strong>Operator:</strong> [BOT OWNER / ORGANIZATION LEGAL NAME]<br>
-    <strong>Contact:</strong> <a href="mailto:[CONTACT EMAIL]">[CONTACT EMAIL]</a><br>
-    <strong>Address or jurisdiction (if required):</strong> [BUSINESS ADDRESS OR JURISDICTION]</p>
+    <p>I may update this policy when the Client or its data handling changes. The revised policy will be posted on this page with a new effective date.</p>
+    <p><strong>Operator:</strong> crsgamer357<br>
+    <strong>Contact:</strong> <a href="https://discord.com/users/968494952369782844" target="_blank" rel="noopener noreferrer">Discord profile for crsgamer357</a></p>
   </main>
   <footer class="site-footer"><a href="./">Policies home</a> · <a href="./terms.html">Terms of service</a></footer>
 </body>
